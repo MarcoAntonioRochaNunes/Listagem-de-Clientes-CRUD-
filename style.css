@@ -10,16 +10,24 @@ body{
 h1{
     margin: 20px;
     font-weight: 500;
-    color:cadetblue;
+    color:#303138;
 }
 .header{
     width: 100vw;
     height: 150px;  
 }
 .buttom button, input{
-    height: 40px;
+    height: 50px;
     margin: 45px;
 }
 .buttom input{
     width: 500px;
+}
+.buttom button{
+    background-color: #303138;
+    color: #CCC;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 12px;
+
 }

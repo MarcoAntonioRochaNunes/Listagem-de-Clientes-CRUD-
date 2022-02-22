@@ -1,21 +1,25 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CRUD</title>
+    <php
+        require "config.php";
+    >
 </head>
 <body>
     <h1>Listagem de Clientes</h1>
     <div class="header">
         <div class="buttom">
-            <button>CADASTRAR</button>
+            <button><a href="adicionar.html">CADASTRAR</a></button>
             <input type="search">
         </div>
     </div>
     <div class="tabela" >
-        <table border="1" width=100%>
+        <table border="0" width=100%>
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
@@ -24,6 +28,9 @@
                 <th>Genero</th>
                 <th>Cidade</th>
                 <th>Status</th>
+            </tr>
+            <tr>
+                <td><a href="edita.php">EDITAR</a></td>
             </tr>
         </table>  
     </div>
