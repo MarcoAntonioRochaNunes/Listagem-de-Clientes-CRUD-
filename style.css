@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+body{
+    background-color: #1d1e20;
+}
+h1{
+    margin: 20px;
+    font-weight: 500;
+    color:cadetblue;
+}
+.header{
+    width: 100vw;
+    height: 150px;  
+}
+.buttom button, input{
+    height: 40px;
+    margin: 45px;
+}
+.buttom input{
+    width: 500px;
+}
