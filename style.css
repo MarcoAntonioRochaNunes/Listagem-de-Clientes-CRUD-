@@ -4,30 +4,39 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+/*---------|index.php|--------*/
 body{
     background-color: #1d1e20;
 }
-h1{
-    margin: 20px;
-    font-weight: 500;
-    color:#303138;
-}
 .header{
-    width: 100vw;
-    height: 150px;  
+    height: 120px;
+    color: white;
+    background-color: #CCC;
 }
-.buttom button, input{
+.buttom{
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttom button, a{
+    background-color: #59606E;
+    text-decoration:none;
     height: 50px;
-    margin: 45px;
-}
-.buttom input{
-    width: 500px;
-}
-.buttom button{
-    background-color: #303138;
-    color: #CCC;
     width: 100px;
     border-radius: 5px;
+    border:none;
     font-size: 12px;
+
+}
+.buttom input{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+/*---------|adicionar.php|--------*/
+
+.formulario{
 
 }

@@ -1,3 +1,6 @@
+<?php
+        require "config.php";
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -6,16 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CRUD</title>
-    <php
-        require "config.php";
-    >
 </head>
 <body>
-    <h1>Listagem de Clientes</h1>
     <div class="header">
         <div class="buttom">
-            <button><a href="adicionar.html">CADASTRAR</a></button>
-            <input type="search">
+            <button><a href="adicionar.php">CADASTRAR</a></button>
+            <h1>Listagem de Clientes</h1>
+            <input type="search" placeholder="Pesquisar...">
         </div>
     </div>
     <div class="tabela" >

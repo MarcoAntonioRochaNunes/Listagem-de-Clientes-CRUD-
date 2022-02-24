@@ -1,5 +1,5 @@
 <?php
-    $db_name="usuarios"
+    $db_name="clientes";
     $db_host="localhost";
     $db_user="root";
     $db_pass="";
