@@ -23,14 +23,14 @@ if($sql->rowCount() > 0) {
 </head>
 <body>
     <div class="header">
-        <div class="buttom">
-            <button><a href="adicionar.php">CADASTRAR</a></button>
+        <div class="menu">
+            <button class="botao0"><a href="adicionar.php">CADASTRAR</a></button>
             <h1>Listagem de Clientes</h1>
             <input type="search" placeholder="Pesquisar...">
         </div>
     </div>
     <div class="tabela" >
-        <table border="0" width=100%>
+        <table>
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
@@ -46,9 +46,9 @@ if($sql->rowCount() > 0) {
                     <td><?=$usuario["email"];?></td>
                     <td><?=$usuario["nascimento"];?></td>
                     <td><?=$usuario["cidade"];?></td>
-                    <td>
-                        <button><a href="editar.php?id=<?=$usuario["id"];?>">Alterar</a></button>
-                        <button><a href="deletar.php?id=<?=$usuario["id"];?>">Deletar</a></button>
+                    <td class="status">
+                        <button class=bt0><a href="editar.php?id=<?=$usuario["id"];?>">Alterar</a></button>
+                        <button class=bt0><a href="deletar.php?id=<?=$usuario["id"];?>">Deletar</a></button>
                     </td>
                 </tr>
             <?php endforeach; ?>

@@ -19,6 +19,9 @@ if($id){
         exit;
     }
 
+}else{
+    header("Location: index.php");
+    exit;
 }
 ?>
 
@@ -28,9 +31,9 @@ if($id){
         <form action="editar_action.php" method="POST" class="formulario">
 
         <input type="text" name="nome" value="<?= $info["nome"];?>"/>
-        <input type="email" name="email" value="ddasdas"/>
-        <input type="data"  name="nascimento" value=""/>
-        <input type="text" name="cidade" value=""/>
+        <input type="email" name="email" value="<?= $info["email"];?>"/>
+        <input type="data"  name="nascimento" value="<?= $info["nascimento"];?>"/>
+        <input type="text" name="cidade" value="<?= $info["cidade"];?>"/>
 
         <input type="submit" value="Cadastrar">
 

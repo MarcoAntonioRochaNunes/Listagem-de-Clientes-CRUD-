@@ -2,41 +2,172 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
-}
-/*---------|index.php|--------*/
-body{
-    background-color: #1d1e20;
-}
-.header{
-    height: 120px;
-    color: white;
-    background-color: #CCC;
-}
-.buttom{
-    margin: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.buttom button, a{
-    background-color: #59606E;
-    text-decoration:none;
-    height: 50px;
-    width: 100px;
-    border-radius: 5px;
-    border:none;
-    font-size: 12px;
 
 }
-.buttom input{
-    width: 400px;
+/*---------|index.php|--------*/
+
+.header{
+    height: 20vh;
+    color: white;
+    background-color: #3A29C3;
+    animation-name: animation;
+    animation-duration: 2s;
+}
+.menu{
+    height: 126px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.botao0{
+    text-decoration: none;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color:#3A29C3;
+}
+.botao0:hover{
+    background-color:#2169CF;
+    color: white;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.header a{
+    text-decoration: none;
+    color: inherit;
+}
+.header input{
+    width: 250px;
     height: 40px;
     border-radius: 5px;
     border: none;
+    outline: none;
+    font-size: 14px;
 }
+.tabela{
+    margin: 10px;
+    display: flex;
+}
+table{
+    width: 100%;
+    border-collapse:separate;
+    border-spacing: 0 8px;
+    animation-name: animation;
+    animation-duration: 3s;
+}
+th{
+    background-color:#3A29C3;
+    height: 30px;
+    border-right: 1px solid white;
+    color: white;
+}
+td{
+    height: 40px;
+    padding: 10px;
+}
+tr:nth-child(even){
+    background-color: #fafafa;
+}
+.status a{
+    text-decoration: none;
+    color: inherit;
+}
+.status button{
+    height: 25px;
+    width: 70px;
+    border: none;   
+    background-color: green;
+    color: white;
+    border-radius: 3px;
+
+}
+.status button:nth-child(even){
+    background-color: red;
+    color: white;
+}
+.bt0:hover{
+    color: white;
+    filter: saturate(50%);
+}
+
 /*---------|adicionar.php|--------*/
 
-.formulario{
+.container{
+    height: 100vh;
+    width: 100vw;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3A29C3;
 }
+svg{
+   display: flex;
+   height: 550px;
+   position:relative;
+   animation-name: animation;
+   animation-duration: 3s;
+}
+
+.box{
+    width: 300px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation-name: animation;
+    animation-duration: 2s;
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botao{
+    background-color: #3A29C3;
+    cursor: pointer;
+    border: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    color: white;
+    width: 255px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.botao:hover{
+    background-color: #2169CF;
+    color: white;
+}
+
+.formulario .Bt1{
+    width: 255px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    outline: none;
+    color:#3A29C3;
+}
+h2{
+    color:#3A29C3;
+}
+@keyframes animation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*---------------------*/
