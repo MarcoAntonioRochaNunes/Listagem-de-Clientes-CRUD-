@@ -109,7 +109,7 @@ svg{
    height: 550px;
    position:relative;
    animation-name: animation;
-   animation-duration: 3s;
+   animation-duration: 1s;
 }
 
 .box{
@@ -170,4 +170,5 @@ h2{
         opacity: 1;
     }
 }
-/*---------------------*/
+/*----------editar.php-----------*/
+
